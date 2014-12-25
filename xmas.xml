@@ -1,3 +1,62 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_stutter" id="491" x="191" y="105"></block>
+  <block type="controls_whileUntil" id="617" inline="false" x="77" y="95">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="645">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="510">
+        <next>
+          <block type="robot_delay" id="521" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="528">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stutter" id="491">
+                <next>
+                  <block type="robot_delay" id="530" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="542">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_reverse" id="559">
+                        <next>
+                          <block type="robot_delay" id="561" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="581">
+                                <field name="NUM">2000</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_stutter" id="571">
+                                <next>
+                                  <block type="robot_delay" id="573" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="588">
+                                        <field name="NUM">1000</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
 </xml>
