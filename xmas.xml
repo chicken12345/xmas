@@ -8,29 +8,19 @@
           </block>
         </value>
         <next>
-          <block type="led_select" id="58" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="120">
-                <field name="NUM">5000</field>
-              </block>
-            </value>
+          <block type="oled_color" id="108">
+            <field name="OBJECT">GREEN</field>
             <next>
-              <block type="oled_color" id="108">
-                <field name="OBJECT">GREEN</field>
+              <block type="movement_reverse" id="87">
                 <next>
-                  <block type="movement_reverse" id="87">
-                    <next>
-                      <block type="robot_delay" id="88" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="89">
-                            <field name="NUM">5000</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_stop" id="99"></block>
-                        </next>
+                  <block type="robot_delay" id="88" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="89">
+                        <field name="NUM">5000</field>
                       </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="99"></block>
                     </next>
                   </block>
                 </next>
