@@ -1,1 +1,45 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="10" x="209" y="51">
+    <next>
+      <block type="robot_delay" id="12" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="43">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <next>
+          <block type="led_select" id="58" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="77">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_reverse" id="87">
+                <next>
+                  <block type="robot_delay" id="88" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="89">
+                        <field name="NUM">5000</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="movement_stop" id="99"></block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="variables_set" id="36" inline="true" x="42" y="95">
+    <field name="VAR">x</field>
+  </block>
+  <block type="variables_get" id="31" x="76" y="187">
+    <field name="VAR">x</field>
+  </block>
+</xml>
