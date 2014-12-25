@@ -36,10 +36,4 @@
       </block>
     </next>
   </block>
-  <block type="variables_set" id="36" inline="true" x="42" y="95">
-    <field name="VAR">x</field>
-  </block>
-  <block type="variables_get" id="31" x="76" y="187">
-    <field name="VAR">x</field>
-  </block>
 </xml>
