@@ -3,7 +3,7 @@
     <field name="VAR">x</field>
     <value name="VALUE">
       <block type="math_number" id="365">
-        <field name="NUM">1000</field>
+        <field name="NUM">2500</field>
       </block>
     </value>
     <next>
